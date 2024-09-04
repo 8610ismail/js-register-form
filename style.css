@@ -15,7 +15,6 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
-    /* background: url(/pawel-czerwinski-3k9PGKWt7ik-unsplash.jpg); */
 }
 
 /* Content Container */
@@ -28,7 +27,7 @@
     padding: 30px 30px;
     border-radius: 5px;
     box-shadow: 20px 20px 50px 1px rgb(55, 55, 55);
-    background-color: rgba(255, 255, 255, 0.9); /* Added background color for better readability */
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Input Box */
