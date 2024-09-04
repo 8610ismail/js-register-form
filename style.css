@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
+    background-color: black;
 }
 
 /* Content Container */
@@ -44,7 +45,9 @@
     color: white;
 }
 
-
+h1{
+    color: white;
+}
 .cont1 input {
     padding: 10px;
     border: 1px solid #ccc;
