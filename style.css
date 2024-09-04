@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    
+
 }
 
 /* Main Container */
@@ -45,9 +45,10 @@
     color: white;
 }
 
-h1{
+h1 {
     color: white;
 }
+
 .cont1 input {
     padding: 10px;
     border: 1px solid #ccc;
