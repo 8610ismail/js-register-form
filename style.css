@@ -6,32 +6,72 @@
     font-family: Arial, sans-serif;
 
 }
-
-/* Main Container */
-.main {
+#loading{
+    /* position: absolute; */
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #56fa56; */
+    overflow-y: hidden;
+    /* scrollbar-width: 20px; */
+
+}
+#btn1{
+    padding:10px 10px;
+    margin: 5px;
+    background-color: rgb(65, 65, 136);
+    border-radius: 10px;
+    transition: .5s;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: 0px 0px 5px navy;
+    
+}
+#btn1:hover{
+    padding:10px 10px;
+    margin: 5px;
+    background-color: rgb(129, 129, 255);
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 15px 15px 15px black;
+}
+span{
+    position:relative;
+    top:2.5px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.main {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     place-items: center;
-    background-color: black;
+    /* background-color: black; */
+    background: url(img.jpeg) no-repeat center center/cover;
 }
 
-/* Content Container */
 .cont1 {
-    background: url(/fonsi-fernandez-9ooPLbHeBXw-unsplash.jpg) no-repeat center center/cover;
     transition: all;
+    backdrop-filter: blur(5px);
     display: grid;
+    /* display: none; */
+
     gap: 10px;
-    width: 25%;
-    padding: 30px 30px;
+    width: 30%;
+    height: auto;
+    padding: 50px 30px;
     border-radius: 5px;
     box-shadow: 20px 20px 50px 1px rgb(55, 55, 55);
-    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
-/* Input Box */
 .inputBox {
     padding-left: 40px;
     position: relative;
@@ -45,8 +85,9 @@
     color: white;
 }
 
-h1 {
+#h1 {
     color: white;
+    /* display: none; */
 }
 
 .cont1 input {
@@ -56,7 +97,6 @@ h1 {
     width: 100%;
 }
 
-/* Button Styles */
 .btn {
     display: grid;
     gap: 10px;
@@ -78,15 +118,6 @@ h1 {
     background-color: #ff004c;
 }
 
-/* .btn button:nth-child(2) {
-    background-color: #6c757d;
-}
-
-.btn button:nth-child(2):hover {
-    background-color: #5a6268;
-} */
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .cont1 {
         width: 50%;

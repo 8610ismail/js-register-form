@@ -1,3 +1,6 @@
+const h1 = document.querySelector('#h1');
+const cont1 = document.querySelector('.cont1');
+const main = document.querySelector('.main');
 const name = document.getElementById('name');
 const nameErr = document.getElementById('nameErr');
 const email = document.getElementById('email');
@@ -9,10 +12,25 @@ const PasswordErr = document.getElementById('PasswordErr');
 const conformPassword = document.getElementById('conformPassword');
 const conformPasswordErr = document.getElementById('conformPasswordErr');
 const signup = document.getElementById('signbtn');
+const button = document.getElementById('btn1');
+const loading = document.getElementById('loading');
 
+btn1.addEventListener('click',() =>{
+    loading.style.display = "none"
+    // loading.style.backgroundColor='red'
+    main.style.display= 'flex'
+    
+})
+function Sign() {
+    if (main.style.display != 'none') {
+        main.style.display ='none';
+    }else{
+        // cont1.style.display ='none'
+    }
+}
 signup.addEventListener('click', () => {
     let isValid = true;
-
+    
     if (name.value === "") {
         nameErr.innerHTML = 'Please Enter Your Name';
         nameErr.style.color = 'red';

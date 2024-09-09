@@ -11,8 +11,11 @@
 </head>
 
 <body>
+    <div id="loading">
+        <button id="btn1" onclick="Sign()">Click to Sign In   &nbsp;<span>></span> </button>
+    </div>
     <div class="main">
-        <h1>Registertion Form</h1>
+        <h1 id="h1">Registertion Form</h1>
         <div class="cont1">
             <div class="inputBox">
             <i class="fa-solid fa-user"></i>
@@ -32,12 +35,12 @@
         <div class="inputBox">
             <i class="fa-solid fa-lock"></i>
             <p id="PasswordErr"></p>
-            <input type="text" placeholder="Password" name="" id="Password">
+            <input type="password" placeholder="Password" name="" id="Password">
         </div>
         <div class="inputBox">
             <i class="fa-solid fa-lock"></i>
             <p id="conformPasswordErr"></p>
-            <input type="text" placeholder=" Conform Password" name="" id="conformPassword">
+            <input type="password" placeholder=" Conform Password" name="" id="conformPassword">
         </div>
         <div class="btn">
             <button id="signbtn">Sign Up</button>
